@@ -3,9 +3,9 @@
 namespace P4BGroup\Authentication;
 
 use Exception;
-use Zend\Ldap\Filter\AndFilter;
-use Zend\Ldap\Filter\OrFilter;
-use Zend\Ldap\Ldap;
+use Laminas\Ldap\Filter\AndFilter;
+use Laminas\Ldap\Filter\OrFilter;
+use Laminas\Ldap\Ldap;
 
 class AuthenticationService
 {
@@ -29,7 +29,7 @@ class AuthenticationService
      * @param string $password
      * @param string|null $baseDn
      * @param int $ldapSearchScope
-     *            (default value: \Zend\Ldap\Ldap::SEARCH_SCOPE_ONE)
+     *            (default value: \Laminas\Ldap\Ldap::SEARCH_SCOPE_ONE)
      *
      * @return User
      * @throws AuthenticationException
